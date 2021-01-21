@@ -16,4 +16,8 @@ public class Plus {
         }
         return r;
     }
+
+    public static int minus(Integer a, Integer b) {
+        return a - b;
+    }
 }

@@ -26,4 +26,9 @@ class DemoApplicationTests {
         assertEquals(2432902008176640000L, Plus.fact(20));
     }
 
+    @Test
+    void TestMinus() {
+        assertEquals(0, Plus.minus(1, 1));
+        assertEquals(1, Plus.minus(2, 1));
+    }
 }
