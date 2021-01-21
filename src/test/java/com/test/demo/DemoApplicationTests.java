@@ -17,4 +17,13 @@ class DemoApplicationTests {
         assertEquals(3, Plus.add(1, 2));
     }
 
+    @Test
+    void TestFact() {
+        assertEquals(1, Plus.fact(1));
+        assertEquals(2, Plus.fact(2));
+        assertEquals(6, Plus.fact(3));
+        assertEquals(3628800, Plus.fact(10));
+        assertEquals(2432902008176640000L, Plus.fact(20));
+    }
+
 }
