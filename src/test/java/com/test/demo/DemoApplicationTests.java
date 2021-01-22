@@ -12,11 +12,11 @@ class DemoApplicationTests {
     void contextLoads() {
     }
 
-    @Test
-    void TestAdd() {
-        assertEquals(2, Plus.add(1, 1));
-        assertEquals(3, Plus.add(1, 2));
-    }
+//    @Test
+//    void TestAdd() {
+//        assertEquals(2, Plus.add(1, 1));
+//        assertEquals(3, Plus.add(1, 2));
+//    }
 
     @Test
     void TestFact() {
