@@ -28,7 +28,13 @@ class DemoApplicationTests {
 
     @Test
     void TestMinus() {
-        assertEquals(0, Plus.minus(1, 1));
-        assertEquals(1, Plus.minus(2, 1));
+        assertEquals(1, Plus.minus(1, 1));
+        assertEquals(2, Plus.minus(2, 1));
+    }
+
+    @Test
+    void getPath() {
+        String relativelyPath = System.getProperty("user.dir");
+        System.out.println(relativelyPath);
     }
 }

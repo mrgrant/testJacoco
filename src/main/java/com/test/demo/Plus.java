@@ -18,6 +18,7 @@ public class Plus {
     }
 
     public static int minus(Integer a, Integer b) {
-        return a - b;
+        int temp = add(a, b);
+        return temp - b;
     }
 }
