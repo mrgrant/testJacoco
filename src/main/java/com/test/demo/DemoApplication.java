@@ -10,7 +10,6 @@ public class DemoApplication {
 
     public static void main(String[] args) throws Exception{
         SpringApplication.run(DemoApplication.class, args);
-        new CountDownLatch(1).await();
     }
 
 }
