@@ -14,4 +14,9 @@ public class HelloServiceImpl implements HelloService {
     public String hello(int a, int b) {
         return String.valueOf(Plus.add(a, b));
     }
+
+    @Override
+    public String sayPageOne(int a) {
+        return String.valueOf(Plus.add(a, a));
+    }
 }

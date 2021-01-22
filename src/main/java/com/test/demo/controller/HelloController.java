@@ -17,6 +17,11 @@ public class HelloController {
 
     @GetMapping("/index")
     public String index() {
-        return "Greetings from Spring Boot" + helloService.hello(1, 2);
+        return "Greetings from Spring Boot " + helloService.hello(1, 2);
+    }
+
+    @GetMapping("/pageOne")
+    public String pageOne() {
+        return "Greetings from Page One " + helloService.sayPageOne(1);
     }
 }

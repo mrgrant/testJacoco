@@ -6,4 +6,6 @@ package com.test.demo.service;
  */
 public interface HelloService {
     String hello(int a, int b);
+
+    String sayPageOne(int a);
 }
