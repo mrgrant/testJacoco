@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class HelloServiceImpl implements HelloService {
     @Override
     public String hello(int a, int b) {
-        return String.valueOf(Plus.add(a, b));
+        return String.valueOf(Plus.add(a, b) + Plus.minus(a, b));
     }
 
     @Override
