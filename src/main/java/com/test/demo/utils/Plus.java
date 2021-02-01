@@ -6,7 +6,7 @@ package com.test.demo.utils;
  */
 public class Plus {
     public static int add(Integer a, Integer b) {
-        return a + b + 1 + (int) fact(5L);
+        return a + b + 1;
     }
 
     public static long fact(long n) {
