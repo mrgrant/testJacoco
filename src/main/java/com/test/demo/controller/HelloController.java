@@ -1,7 +1,9 @@
 package com.test.demo.controller;
 
 import com.test.demo.service.HelloService;
+import com.test.demo.service.TestService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -14,6 +16,8 @@ import javax.annotation.Resource;
 public class HelloController {
     @Resource
     HelloService helloService;
+    @Resource
+    TestService testService;
 
     @GetMapping("/index")
     public String index() {
@@ -23,5 +27,15 @@ public class HelloController {
     @GetMapping("/pageOne")
     public String pageOne() {
         return "Greetings from Page One " + helloService.sayPageOne(1);
+    }
+
+    @GetMapping("/testForLoop")
+    public String testForLoop(@RequestParam("num") int num) {
+        return "test For loop " + testService.testForLoop(num);
+    }
+
+    @GetMapping("/testIf")
+    public String testIf(@RequestParam ("num") int num) {
+        return "test If " + testService.testIf(num);
     }
 }

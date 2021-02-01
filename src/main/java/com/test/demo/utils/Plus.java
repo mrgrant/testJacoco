@@ -9,7 +9,15 @@ public class Plus {
         return a + b + 1;
     }
 
-    public static long fact(long n) {
+    public static long summation(int n) {
+        long sum = 0;
+        for (int i = 1; i <= n ; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+
+    public static long fact(int n) {
         long r = 1;
         for (long i = 1; i <= n; i++) {
             r = r * i;
