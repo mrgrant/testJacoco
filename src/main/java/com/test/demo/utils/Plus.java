@@ -31,6 +31,6 @@ public class Plus {
     }
 
     public static int power(Integer a) {
-        return a * a;
+        return a * a * a;
     }
 }

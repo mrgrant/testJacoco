@@ -11,6 +11,8 @@ public interface TestService {
 
     String testChangeController(int num);
 
+    String testChangeControllerV2(int num);
+
     String testChangeImpl(int num);
 
     String testChangeUtils(int num);

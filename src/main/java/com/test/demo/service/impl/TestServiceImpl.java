@@ -38,8 +38,13 @@ public class TestServiceImpl implements TestService {
     }
 
     @Override
+    public String testChangeControllerV2(int num) {
+        return String.valueOf(Plus.add(num, 10));
+    }
+
+    @Override
     public String testChangeImpl(int num) {
-        return String.valueOf(Plus.add(num, num));
+        return String.valueOf(Plus.minus(num, 1));
     }
 
     @Override

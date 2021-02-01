@@ -41,7 +41,7 @@ public class HelloController {
 
     @GetMapping("/testChangeController")
     public String testChangeController(@RequestParam ("num") int num) {
-        return "test change controller " + testService.testChangeController(num);
+        return "test change controller " + testService.testChangeControllerV2(num);
     }
 
     @GetMapping("/testChangeImpl")
