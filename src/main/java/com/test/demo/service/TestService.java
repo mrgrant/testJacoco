@@ -8,4 +8,10 @@ public interface TestService {
     Long testForLoop(int num);
 
     Long testIf(int num);
+
+    String testChangeController(int num);
+
+    String testChangeImpl(int num);
+
+    String testChangeUtils(int num);
 }

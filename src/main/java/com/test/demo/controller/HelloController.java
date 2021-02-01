@@ -38,4 +38,19 @@ public class HelloController {
     public String testIf(@RequestParam ("num") int num) {
         return "test If " + testService.testIf(num);
     }
+
+    @GetMapping("/testChangeController")
+    public String testChangeController(@RequestParam ("num") int num) {
+        return "test change controller " + testService.testChangeController(num);
+    }
+
+    @GetMapping("/testChangeImpl")
+    public String testChangeImpl(@RequestParam ("num") int num) {
+        return "test change impl " + testService.testChangeImpl(num);
+    }
+
+    @GetMapping("/testChangeUtils")
+    public String testChangeUtils(@RequestParam("num") int num) {
+        return "test change utils " + testService.testChangeUtils(num);
+    }
 }

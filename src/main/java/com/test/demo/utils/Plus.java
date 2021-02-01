@@ -29,4 +29,8 @@ public class Plus {
         int temp = add(a, b);
         return temp - b;
     }
+
+    public static int power(Integer a) {
+        return a * a;
+    }
 }

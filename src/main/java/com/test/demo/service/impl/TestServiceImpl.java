@@ -31,4 +31,19 @@ public class TestServiceImpl implements TestService {
             return Plus.summation(num);
         }
     }
+
+    @Override
+    public String testChangeController(int num) {
+        return String.valueOf(Plus.add(num, num));
+    }
+
+    @Override
+    public String testChangeImpl(int num) {
+        return String.valueOf(Plus.add(num, num));
+    }
+
+    @Override
+    public String testChangeUtils(int num) {
+        return String.valueOf(Plus.power(num));
+    }
 }
